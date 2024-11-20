@@ -1,0 +1,63 @@
+/* Styling for the app */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+  background: url("https://source.unsplash.com/1600x900/?food") no-repeat center center; /* Apply the background image here */
+  background-size: cover; /* Ensure background covers the entire viewport */
+  background-position: center center; /* Keep the image centered */
+}
+
+/* Welcome card styling */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure it's above the background */
+  position: relative;
+  width: 80%; /* Ensure card doesn't extend off the screen */
+  max-width: 500px; /* Optional: Limit max width */
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 20px;
+  align-items: center; /* Center buttons horizontally */
+}
+
+.btn {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0; /* Adjust margin to create space between buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px; /* Optional: Define a fixed width for buttons */
+  transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn:hover {
+  background: #3700b3;
+}

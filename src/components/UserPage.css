@@ -1,0 +1,95 @@
+/* Full-screen background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Centered container for UserPage */
+  .user-page-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Transparent box for UserPage content (mimics login page) */
+  .user-page-container {
+    background: rgba(255, 255, 255, 0.8); /* White with some transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Similar box shadow as the login page */
+    z-index: 1; /* Ensure it's above the background */
+    width: 300px; /* You can adjust this based on preference */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap between fields */
+    align-items: center;
+    text-align: center;
+    margin-top: 50px; /* Move the box lower */
+  }
+  
+  /* Input box styling */
+  .input-box {
+    width: 100%;
+    margin-bottom: 10px; /* Reduced margin between fields */
+  }
+  
+  .input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .input-box input {
+    width: 93%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .input-box input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Button styling for the Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea; /* Same as the Login button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .submit-btn:hover {
+    background-color: #3700b3;
+  }
+  
+  /* Optional: Semi-circle styling (you can add your custom design here if needed) */
+ 
+  /* Increased font size for the heading text */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the "Please enter your details" text */
+  p {
+    font-size: 20px;
+    margin-bottom: 18px; /* Reduced margin for closer text to the input fields */
+  }
+  

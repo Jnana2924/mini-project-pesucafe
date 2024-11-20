@@ -1,0 +1,91 @@
+/* Styling for the app */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://source.unsplash.com/1600x900/?food") no-repeat center center; /* Apply the background image directly */
+  background-size: cover; /* Ensure background covers the entire viewport */
+  background-position: center center; /* Keep the image centered horizontally and vertically */
+  position: relative;
+}
+
+/* Container for the main content (transparent box for Are you hungry?) */
+.transparent-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8); /* Transparent box with white background */
+  padding: 60px; /* Increased padding for larger box */
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  width: 70%; /* Increased width for the box */
+  max-width: 500px; /* Limit the max width */
+}
+
+/* Header text - "Are you hungry?" */
+.header-text {
+  font-size: 50px; /* Increased font size for bigger text */
+  font-weight: bold;
+  color: #444; /* Darker shade of text */
+  margin-bottom: 50px; /* Increased margin to increase space between text and button */
+}
+
+/* Styling for the Pesu logo image */
+.pesu-logo {
+  width: 60px; /* Smaller logo size */
+  height: 60px;
+  margin-right: 50px; /* Increased space between logo and button */
+}
+
+/* "Let's get started" button styling */
+.get-started-btn {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 15px 46px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center; /* Align logo and text properly */
+  margin-top: 5px; /* Increased margin between button and Pesu logo */
+}
+
+.get-started-btn:hover {
+  background: #3700b3;
+}
+
+/* Flex container for the Pesu logo and "Let's get started" button */
+.get-started-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New transparent box in the top-right corner */
+.top-right-box {
+  position: absolute;
+  top: 20px; /* Position from the top */
+  right: 40px; /* Increased space from the right edge to shift it further right */
+  
+  background: rgba(255, 255, 255, 0.8); /* Slightly lighter background */
+  color: black;
+  padding: 15px; /* Reduced padding for smaller box */
+  border-radius: 15px;
+  width: 160px; /* Reduced width to make box smaller */
+  text-align: center;
+  font-size: 24px; /* Slightly larger font size for "Pesu Cafe" */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+/* Styling for the Pesu Cafe text inside the new transparent box */
+.top-right-box h1 {
+  margin: 0;
+  font-size: 22px; /* Increased font size for Pesu Cafe text */
+  font-weight: bold;
+}

@@ -1,0 +1,88 @@
+/* General styling for the app container */
+.signup-container {
+    display: flex;
+    justify-content: center; /* Centers the box horizontally */
+    align-items: center; /* Centers the box vertically */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Transparent card for SignUp form */
+.signup-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: relative; /* Ensures proper centering */
+}
+
+/* Header styling */
+.signup-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input field styling */
+.signup-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 15px 0; /* Adds spacing between input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Input focus effect */
+.signup-input:focus {
+    border-color: #6200ea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+/* Submit button styling */
+.signup-button {
+    background: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px; /* Space above the button */
+    transition: background 0.3s ease;
+}
+
+/* Submit button hover effect */
+.signup-button:hover {
+    background: #3700b3;
+}
+
+/* Alert message styling (optional for validation) */
+.alert {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .signup-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .signup-input {
+        font-size: 14px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+    }
+}
